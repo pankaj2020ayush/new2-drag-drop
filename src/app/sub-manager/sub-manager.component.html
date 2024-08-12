@@ -1,0 +1,14 @@
+<!-- <div cdkDropList [cdkDropListData]="items" (cdkDropListDropped)="drop($event)">
+    <div *ngFor="let item of items" cdkDrag>
+      {{ item }}
+    </div>
+  </div>
+   -->
+
+
+<div class="table" cdkDropList [cdkDropListData]="items" (cdkDropListDropped)="drop($event)">
+    <h4>{{ tableName }}</h4>
+    <div *ngFor="let item of items" cdkDrag>
+        {{ item }}
+    </div>
+</div>
